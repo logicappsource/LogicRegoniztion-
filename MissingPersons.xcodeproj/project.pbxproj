@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3834ECEE9A9681EFEA9C7F9A /* Pods_MissingPersons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDEBB718B1E362AB1934E777 /* Pods_MissingPersons.framework */; };
+		83F3F36D1CC85B800032A68E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3F36C1CC85B800032A68E /* Person.swift */; };
+		83F3F36F1CC85C610032A68E /* FaceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3F36E1CC85C610032A68E /* FaceService.swift */; };
+		890129221CB0993900BD509B /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890129211CB0993900BD509B /* PersonCell.swift */; };
 		89B087181CB092F100C9FA69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B087171CB092F100C9FA69 /* AppDelegate.swift */; };
 		89B0871A1CB092F100C9FA69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B087191CB092F100C9FA69 /* ViewController.swift */; };
 		89B0871D1CB092F100C9FA69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89B0871B1CB092F100C9FA69 /* Main.storyboard */; };
@@ -15,6 +19,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10CD22F4FE3D1B556CA11BA2 /* Pods-MissingPersons.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MissingPersons.release.xcconfig"; path = "Pods/Target Support Files/Pods-MissingPersons/Pods-MissingPersons.release.xcconfig"; sourceTree = "<group>"; };
+		3FD766459E992B136144FA57 /* Pods-MissingPersons.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MissingPersons.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MissingPersons/Pods-MissingPersons.debug.xcconfig"; sourceTree = "<group>"; };
+		83F3F3691CC859D00032A68E /* MissingPersons-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MissingPersons-Bridging-Header.h"; sourceTree = "<group>"; };
+		83F3F36C1CC85B800032A68E /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		83F3F36E1CC85C610032A68E /* FaceService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceService.swift; sourceTree = "<group>"; };
+		890129211CB0993900BD509B /* PersonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
 		89B087141CB092F100C9FA69 /* MissingPersons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MissingPersons.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89B087171CB092F100C9FA69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89B087191CB092F100C9FA69 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +32,7 @@
 		89B0871E1CB092F100C9FA69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89B087211CB092F100C9FA69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89B087231CB092F100C9FA69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDEBB718B1E362AB1934E777 /* Pods_MissingPersons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MissingPersons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +40,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3834ECEE9A9681EFEA9C7F9A /* Pods_MissingPersons.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1440BDD77E576419227E0412 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3FD766459E992B136144FA57 /* Pods-MissingPersons.debug.xcconfig */,
+				10CD22F4FE3D1B556CA11BA2 /* Pods-MissingPersons.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		486B37DA33AC718DD0BA8BEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDEBB718B1E362AB1934E777 /* Pods_MissingPersons.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		89B0870B1CB092F100C9FA69 = {
 			isa = PBXGroup;
 			children = (
 				89B087161CB092F100C9FA69 /* MissingPersons */,
 				89B087151CB092F100C9FA69 /* Products */,
+				1440BDD77E576419227E0412 /* Pods */,
+				486B37DA33AC718DD0BA8BEA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,10 +87,14 @@
 			children = (
 				89B087171CB092F100C9FA69 /* AppDelegate.swift */,
 				89B087191CB092F100C9FA69 /* ViewController.swift */,
+				890129211CB0993900BD509B /* PersonCell.swift */,
 				89B0871B1CB092F100C9FA69 /* Main.storyboard */,
 				89B0871E1CB092F100C9FA69 /* Assets.xcassets */,
 				89B087201CB092F100C9FA69 /* LaunchScreen.storyboard */,
 				89B087231CB092F100C9FA69 /* Info.plist */,
+				83F3F3691CC859D00032A68E /* MissingPersons-Bridging-Header.h */,
+				83F3F36C1CC85B800032A68E /* Person.swift */,
+				83F3F36E1CC85C610032A68E /* FaceService.swift */,
 			);
 			path = MissingPersons;
 			sourceTree = "<group>";
@@ -71,9 +106,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 89B087261CB092F100C9FA69 /* Build configuration list for PBXNativeTarget "MissingPersons" */;
 			buildPhases = (
+				DC2DEDFA1F277A17C6631F42 /* [CP] Check Pods Manifest.lock */,
 				89B087101CB092F100C9FA69 /* Sources */,
 				89B087111CB092F100C9FA69 /* Frameworks */,
 				89B087121CB092F100C9FA69 /* Resources */,
+				7E5B58A53BD071A29CC33B5C /* [CP] Embed Pods Frameworks */,
+				1A6373E822F1CE80FA70467E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +134,7 @@
 				TargetAttributes = {
 					89B087131CB092F100C9FA69 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -130,12 +169,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1A6373E822F1CE80FA70467E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MissingPersons/Pods-MissingPersons-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E5B58A53BD071A29CC33B5C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MissingPersons/Pods-MissingPersons-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC2DEDFA1F277A17C6631F42 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		89B087101CB092F100C9FA69 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83F3F36F1CC85C610032A68E /* FaceService.swift in Sources */,
+				890129221CB0993900BD509B /* PersonCell.swift in Sources */,
 				89B0871A1CB092F100C9FA69 /* ViewController.swift in Sources */,
+				83F3F36D1CC85B800032A68E /* Person.swift in Sources */,
 				89B087181CB092F100C9FA69 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,23 +339,32 @@
 		};
 		89B087271CB092F100C9FA69 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FD766459E992B136144FA57 /* Pods-MissingPersons.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MissingPersons/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.devslopes.MissingPersons;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MissingPersons/MissingPersons-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		89B087281CB092F100C9FA69 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10CD22F4FE3D1B556CA11BA2 /* Pods-MissingPersons.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MissingPersons/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.devslopes.MissingPersons;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MissingPersons/MissingPersons-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -288,6 +387,7 @@
 				89B087281CB092F100C9FA69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

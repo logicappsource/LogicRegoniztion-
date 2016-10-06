@@ -1,25 +1,130 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MissingPersons" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e3c-Zy-5SS">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Missing persons" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCz-BA-Swe">
+                                        <rect key="frame" x="96" y="32" width="128" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="rgq-gS-c1z"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1532169758077784" green="0.50826064734332577" blue="0.87434554973821987" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="gCz-BA-Swe" secondAttribute="bottom" constant="8" id="4Lx-5X-Mb1"/>
+                                    <constraint firstAttribute="height" constant="61" id="fY2-jg-f64"/>
+                                    <constraint firstItem="gCz-BA-Swe" firstAttribute="centerX" secondItem="e3c-Zy-5SS" secondAttribute="centerX" id="gPM-Qo-0A4"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="pxl-KN-Orv">
+                                <rect key="frame" x="0.0" y="69" width="320" height="144"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="144" id="bcf-gZ-wru"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fC9-xN-FxG">
+                                    <size key="itemSize" width="200" height="140"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PersonCell" id="IeO-kf-5NJ" customClass="PersonCell" customModule="MissingPersons" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="2" width="200" height="140"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="140"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JcG-lb-c8i">
+                                                    <rect key="frame" x="8" y="8" width="184" height="124"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="JcG-lb-c8i" firstAttribute="trailing" secondItem="IeO-kf-5NJ" secondAttribute="trailingMargin" id="3SP-Cb-kjT"/>
+                                            <constraint firstItem="JcG-lb-c8i" firstAttribute="bottom" secondItem="IeO-kf-5NJ" secondAttribute="bottomMargin" id="szR-H1-JEx"/>
+                                            <constraint firstItem="JcG-lb-c8i" firstAttribute="top" secondItem="IeO-kf-5NJ" secondAttribute="topMargin" id="yg3-sd-Oss"/>
+                                            <constraint firstItem="JcG-lb-c8i" firstAttribute="leading" secondItem="IeO-kf-5NJ" secondAttribute="leadingMargin" id="ypP-Eq-o5X"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="personImage" destination="JcG-lb-c8i" id="yY1-q0-AlY"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="HhO-XM-TKg">
+                                <rect key="frame" x="91" y="237" width="138" height="138"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="138" id="J4w-07-l5L"/>
+                                    <constraint firstAttribute="width" constant="138" id="Zkz-Or-s7q"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efm-3D-FYq">
+                                <rect key="frame" x="66" y="436" width="188" height="47"/>
+                                <color key="backgroundColor" red="0.15321697579999999" green="0.50826064729999998" blue="0.8743455497" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="188" id="6Ss-2f-DWd"/>
+                                    <constraint firstAttribute="height" constant="47" id="Hcg-Yp-z4C"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <state key="normal" title="CHECK FOR MATCH">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="checkMatch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VQw-E3-2Vk"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HhO-XM-TKg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2ip-x9-o3Y"/>
+                            <constraint firstItem="efm-3D-FYq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Em-CG-vWf"/>
+                            <constraint firstAttribute="trailing" secondItem="pxl-KN-Orv" secondAttribute="trailing" id="Au8-8V-wzH"/>
+                            <constraint firstItem="e3c-Zy-5SS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="DTh-9n-gEf"/>
+                            <constraint firstItem="HhO-XM-TKg" firstAttribute="top" secondItem="pxl-KN-Orv" secondAttribute="bottom" constant="24" id="Kni-Om-kSJ"/>
+                            <constraint firstItem="pxl-KN-Orv" firstAttribute="top" secondItem="e3c-Zy-5SS" secondAttribute="bottom" constant="8" id="T06-a0-4cS"/>
+                            <constraint firstItem="pxl-KN-Orv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="aZ4-MW-HOi"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="efm-3D-FYq" secondAttribute="bottom" constant="85" id="avi-Cf-gYf"/>
+                            <constraint firstItem="e3c-Zy-5SS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="oyB-ov-zyt"/>
+                            <constraint firstAttribute="trailing" secondItem="e3c-Zy-5SS" secondAttribute="trailing" id="t6g-UH-Lkf"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="collectionView" destination="pxl-KN-Orv" id="b14-AN-QYM"/>
+                        <outlet property="selectedImg" destination="HhO-XM-TKg" id="IVK-Ec-Vp5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="506" y="419"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="profile" width="770" height="756"/>
+    </resources>
 </document>
